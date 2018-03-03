@@ -30,7 +30,7 @@
       </ul>
 
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-menu">
           <li><a href="index.html">Главная</a></li>
           <li><a href="about.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -136,8 +136,21 @@
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
             </p>
           </li>
-          <li class="service-item"><a href="#">Гарантия</a></li>
-          <li class="service-item"><a href="#">Кредит</a></li>
+          <li class="service-item">
+            <a href="#">Гарантия</a>
+            <h3>Гарантия</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит, а также в случае пожара, провоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы бменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+            </p>
+          </li>
+          <li class="service-item">
+            <a href="#">Кредит</a>
+            <h3>Кредит</h3>
+            <p>
+              Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+            </p>
+            <a href="#" class="service-credit-btn">Отправить заявку</a>
+          </li>
         </ul>
       </section>
 
@@ -162,13 +175,65 @@
         <p>
           Вы можете забрать товар сами, заехав в наш офис:
         </p>
-        <img src="img/map.png" alt="Карта проезда" class="contacts-map">
+        <a href="https://yandex.ru/maps">
+          <img src="img/map.png" alt="Карта проезда" class="contacts-map">
+        </a>
         <a href="#" class="contacts-btn">Заблудились? Напишите нам!</a>
       </section>
 
     </main>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <footer class="main-footer">
+      <a class="footer-logo">
+        <img src="img/main-logo.svg" width="220" height="50" alt="Логотип магазина Техномарт">
+      </a>
+      <p class="footer-address">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+      </p>
+      <p class="footer-phone">
+        +7(812)555-05-55
+      </p>
+      <ul class="footer-menu">
+          <li><a href="about.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="footer-promo-list">
+        <li class="footer-promo-item"><a href="#">Материалы</a></li>
+        <li class="footer-promo-item"><a href="#">Техника</a></li>
+        <li class="footer-promo-item"><a href="#">Инструмент</a></li>
+        <li class="footer-promo-item"><a href="#">Спецпредложения</a></li>
+      </ul>
+      <p class="footer-copyright">
+        © 2010–2017 Компания «Техномарт» Все права защищены
+      </p>
+      <p class="footer-social">
+        <a href="https://vk.com/" class="footer-social-item"></a>
+        <a href="https://facebook.com/" class="footer-social-item"></a>
+        <a href="https://instagram.com/" class="footer-social-item"></a>
+      </p>
+      <p class="footer-mail">
+        Обратная связь:
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="footer-credits">
+        Разработано -
+        <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+      </p>
+    </footer>
+
+    <section class="modal modal-write-us">
+      <h2 class="visual-hidden">Напишите нам</h2>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">X</span>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visual-hidden">Как добраться</h2>
+      <span class="modal-close">X</span>
+    </section>
 
   </body>
 </html>
