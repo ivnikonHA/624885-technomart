@@ -3,30 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
-      <a href="index.html" class="main-header-logo">
-        ТЕХНОМАРТ
-      </a>
-      <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="header-search-input">Поиск:</label>
-        <input type="text" id="header-search-input" name="header-search-input">
-      </form>
-      <a href="#" class="header-bookmarks">Закладки:</a>
-      <a href="#" class="header-cart items-in-cart">Корзина:</a>
-      <a href="#" class="header-checkout-btn">Оформить заказ</a>
-      <p class="header-decription">
+      <div class="header-menu">
+        <a href="index.html" class="main-logo main-header-logo">
+          ТЕХНОМАРТ
+        </a>
+        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="header-search-input">Поиск:</label>
+          <input type="text" id="header-search-input" name="header-search-input">
+        </form>
+        <a href="#" class="header-bookmarks">Закладки:</a>
+        <a href="#" class="header-cart items-in-cart">Корзина: 10</a>
+        <a href="#" class="header-checkout-btn">Оформить заказ</a>
+      </div>
+      <p class="header-description">
         Интернет-магазин
         строительных материалов
         и инструментов для ремонта
       </p>
       <div class="header-contacts">
         <p class="header-phone">
-          +7(812)555-05-55
+          +7 (812) 555-05-55
         </p>
         <p class="header-address">
           г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
@@ -65,14 +67,14 @@
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
+          <fieldset class="filter-price">
             <legend>Цена:</legend>
             <input type="range" name="filter-price">
-            <input type="text" name="filter-min-price">
+            <input type="text" name="filter-min-price" value="0">
             -
-            <input type="text" name="filter-max-price">
+            <input type="text" name="filter-max-price" value="30000">
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-makers">
             <legend>Производители:</legend>
             <ul>
               <li class="filter-option">
@@ -97,7 +99,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-power">
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option">
@@ -218,51 +220,57 @@
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo">
-        ТЕХНОМАРТ
-      </a>
-      <p class="footer-address">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
-      </p>
-      <p class="footer-phone">
-        +7(812)555-05-55
-      </p>
-      <ul class="footer-menu">
-          <li><a href="about.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="footer-promo-list">
-        <li class="footer-promo-item"><a href="#">Материалы</a></li>
-        <li class="footer-promo-item"><a href="#">Техника</a></li>
-        <li class="footer-promo-item"><a href="#">Инструмент</a></li>
-        <li class="footer-promo-item"><a href="#">Спецпредложения</a></li>
-      </ul>
-      <p class="footer-copyright">
-        © 2010–2017 Компания «Техномарт» Все права защищены
-      </p>
-      <p class="footer-social">
-        <a href="https://vk.com/" class="footer-social-item"></a>
-        <a href="https://facebook.com/" class="footer-social-item"></a>
-        <a href="https://instagram.com/" class="footer-social-item"></a>
-      </p>
-      <p class="footer-mail">
-        Обратная связь:
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
-      <p class="footer-credits">
-        Разработано -
-        <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
-      </p>
+      <div class="footer-top">
+        <a class="main-logo footer-logo">
+          ТЕХНОМАРТ
+        </a>
+        <p class="footer-address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+        </p>
+        <p class="footer-phone">
+          +7 (812) 555-05-55
+        </p>
+        <ul class="footer-menu">
+            <li><a href="about.html">Компания</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="footer-promo-list">
+          <li class="footer-promo-item"><a href="#">Материалы</a></li>
+          <li class="footer-promo-item"><a href="#">Техника</a></li>
+          <li class="footer-promo-item"><a href="#">Инструмент</a></li>
+          <li class="footer-promo-item"><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2010–2017 Компания «Техномарт» Все права защищены
+        </p>
+        <p class="footer-social">
+          <a href="https://vk.com/" class="footer-social-item"></a>
+          <a href="https://facebook.com/" class="footer-social-item"></a>
+          <a href="https://instagram.com/" class="footer-social-item"></a>
+        </p>
+        <p class="footer-mail">
+          Обратная связь:
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="footer-credits">
+          Разработано -
+          <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        </p>
+      </div>
     </footer>
 
     <section class="modal modal-add-to-cart">
       <h2>Товар добавлен в корзину!</h2>
-      <button class="modal-checkout-btn">Оформить заказ</button>
-      <button class="modal-return-btn">Продолжить покупки</button>
-      <span class="modal-close">X</span>
+      <div class="submit-part">
+        <button class="main-button modal-checkout-btn">Оформить заказ</button>
+        <button class="main-button modal-return-btn">Продолжить покупки</button>
+      </div>
+      <span class="modal-close"></span>
     </section>
 
   </body>
