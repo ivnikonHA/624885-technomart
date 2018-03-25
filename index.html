@@ -10,49 +10,56 @@
   <body>
     <header class="main-header">
       <div class="header-menu">
-        <a class="main-logo main-header-logo">
-          ТЕХНОМАРТ
-        </a>
-        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="header-search-input">Поиск:</label>
-          <input type="text" id="header-search-input" name="header-search-input">
-        </form>
-        <a href="#" class="header-bookmarks">Закладки:</a>
-        <a href="#" class="header-cart">Корзина:</a>
-        <a href="#" class="header-checkout-btn">Оформить заказ</a>
-      </div>
-      <p class="header-description">
-        Интернет-магазин
-        строительных материалов
-        и инструментов для ремонта
-      </p>
-      <div class="header-contacts">
-        <p class="header-phone">
-          +7 (812) 555-05-55
-        </p>
-        <p class="header-address">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
-        </p>
-      </div>
-      <div class="user-navigation">
-        <a href="#" class="user-btn visually-hidden">Равшан Джамшутович</a>
-        <a href="#" class="login-btn">Войти</a>
-        <a href="#" class="registration-btn">Регистрация</a>
-        <a href="#" class="my-orders-btn visually-hidden">Мои заказы</a>
-        <a href="#" class="my-cabinet-btn visually-hidden">Личный кабинет</a>
+        <div class="container">
+          <a class="main-logo main-header-logo">
+            ТЕХНОМАРТ
+          </a>
+          <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="heder-search-label" for="header-search-input">Поиск:</label>
+            <input type="text" id="header-search-input" name="header-search-input">
+          </form>
+          <a href="#" class="header-bookmarks">Закладки:</a>
+          <a href="#" class="header-cart">Корзина:</a>
+          <a href="#" class="header-checkout-btn">Оформить заказ</a>
+        </div>
       </div>
 
-      <nav class="main-navigation">
-        <ul class="main-menu">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="special.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="middle-header">
+          <p class="header-description">
+            Интернет-магазин
+            строительных материалов
+            и инструментов для ремонта
+          </p>
+          <div class="header-contacts">
+            <p class="header-phone">
+              +7 (812) 555-05-55
+            </p>
+            <p class="header-address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+            </p>
+          </div>
+          <div class="user-navigation">
+            <a href="#" class="user-btn visually-hidden">Равшан Джамшутович</a>
+            <a href="#" class="login-btn">Войти</a>
+            <a href="#" class="registration-btn">Регистрация</a>
+            <a href="#" class="my-orders-btn visually-hidden">Мои заказы</a>
+            <a href="#" class="my-cabinet-btn visually-hidden">Личный кабинет</a>
+          </div>
+        </div>
+
+        <nav class="main-navigation">
+          <ul class="main-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="special.html">Спецпредложения</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
@@ -150,106 +157,117 @@
 
       <section class="services">
         <h2 class="services-header">Сервисы</h2>
-        <p>
+        <p class="services-description">
           Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <ul class="services-list">
-          <li class="service-item active-service-item">
-            <a href="#">Доставка</a>
-            <h3>Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-            </p>
-          </li>
-          <li class="service-item">
-            <a href="#">Гарантия</a>
-            <h3>Гарантия</h3>
-            <p>
-              Если купленный у нас товар поломается или заискрит, а также в случае пожара, провоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы бменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-            </p>
-          </li>
-          <li class="service-item">
-            <a href="#">Кредит</a>
-            <h3>Кредит</h3>
-            <p>
-              Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-            </p>
-            <a href="#" class="service-credit-btn">Отправить заявку</a>
-          </li>
-        </ul>
+        <div class="services-content">
+          <ul class="services-menu">
+            <li class="active-service-item"><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Кредит</a></li>
+          </ul>
+          <ul class="services-list">
+            <li class="service-item active-service-item">
+
+              <h3>Доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+              </p>
+            </li>
+            <li class="service-item">
+
+              <h3>Гарантия</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит, а также в случае пожара, провоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы бменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+              </p>
+            </li>
+            <li class="service-item">
+
+              <h3>Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+              </p>
+              <a href="#" class="service-credit-btn">Отправить заявку</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="about">
-        <h2 class="about-header">КОМПАНИЯ «Техномарт»</h2>
-        <p>
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="delivery-list">
-          <li class="delivery-item">Деловые линии</li>
-          <li class="delivery-item">Автотрейдинг</li>
-          <li class="delivery-item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="main-button about-btn">Подробнее о компании</a>
-      </section>
+      <div class="index-columns">
+        <section class="about">
+          <h2 class="about-header">КОМПАНИЯ «Техномарт»</h2>
+          <p>
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul class="delivery-list">
+            <li class="delivery-item">Деловые линии</li>
+            <li class="delivery-item">Автотрейдинг</li>
+            <li class="delivery-item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="main-button about-btn">Подробнее о компании</a>
+        </section>
 
-      <section class="contacts">
-        <h2 class="contacts-header">Контакты</h2>
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис:
-        </p>
-        <a href="https://yandex.ru/maps">
-          <img src="img/contacts-map.jpg" width="300" height="158" alt="Карта проезда" class="contacts-map">
-        </a>
-        <a href="#" class="main-button contacts-btn">Заблудились? Напишите нам!</a>
-      </section>
+        <section class="contacts">
+          <h2 class="contacts-header">Контакты</h2>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис:
+          </p>
+          <a href="https://yandex.ru/maps">
+            <img src="img/contacts-map.jpg" width="300" height="158" alt="Карта проезда" class="contacts-map">
+          </a>
+          <a href="#" class="main-button contacts-btn">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
 
     </main>
 
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="main-logo footer-logo">
-          ТЕХНОМАРТ
-        </a>
-        <p class="footer-address">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
-        </p>
-        <p class="footer-phone">
-          +7 (812) 555-05-55
-        </p>
-        <ul class="footer-menu">
-            <li><a href="about.html">Компания</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="footer-promo-list">
-          <li class="footer-promo-item"><a href="#">Материалы</a></li>
-          <li class="footer-promo-item"><a href="#">Техника</a></li>
-          <li class="footer-promo-item"><a href="#">Инструмент</a></li>
-          <li class="footer-promo-item"><a href="#">Спецпредложения</a></li>
-        </ul>
+        <div class="container">
+          <a class="main-logo footer-logo">
+            ТЕХНОМАРТ
+          </a>
+          <ul class="footer-menu">
+              <li><a href="about.html">Компания</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <p class="footer-address">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+            +7 (812) 555-05-55
+          </p>
+          <ul class="footer-promo-list">
+            <li class="footer-promo-item"><a href="#">Материалы</a></li>
+            <li class="footer-promo-item"><a href="#">Техника</a></li>
+            <li class="footer-promo-item"><a href="#">Инструмент</a></li>
+            <li class="footer-promo-item"><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copyright">
-          © 2010–2017 Компания «Техномарт» Все права защищены
-        </p>
-        <p class="footer-social">
-          <a href="https://vk.com/" class="footer-social-item"></a>
-          <a href="https://facebook.com/" class="footer-social-item"></a>
-          <a href="https://instagram.com/" class="footer-social-item"></a>
-        </p>
-        <p class="footer-mail">
-          Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="footer-credits">
-          Разработано -
-          <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
-        </p>
+        <div class="container">
+          <p class="footer-copyright">
+            © 2010–2017 Компания «Техномарт» Все права защищены
+          </p>
+          <p class="footer-social">
+            <a href="https://vk.com/" class="footer-social-item"></a>
+            <a href="https://facebook.com/" class="footer-social-item"></a>
+            <a href="https://instagram.com/" class="footer-social-item"></a>
+          </p>
+          <p class="footer-mail">
+            Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer-credits">
+            Разработано -
+            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+          </p>
+        </div>
       </div>
     </footer>
 

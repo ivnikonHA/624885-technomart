@@ -16,6 +16,14 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .inner-page {
   line-height: 18px;
 }
@@ -276,6 +284,8 @@ a {
 }
 
 .promo-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -622,6 +632,8 @@ a {
 
 .services-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .service-item:first-child {
@@ -639,7 +651,13 @@ a {
   background-repeat: no-repeat;
 }
 
-.service-item a {
+.services-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-menu a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -919,4 +937,199 @@ a {
   width: 21px;
   height: 21px;
   background-image: url("../img/modal-close.svg");
+}
+
+/* Сеточные стили */
+
+/* Шапка*/
+.main-header {
+  margin-bottom: 60px;
+}
+
+.header-menu .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-logo {
+  width: 220px;
+}
+
+.middle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-description {
+  width: 196px;
+  padding-left: 50px;
+}
+
+.header-contacts {
+  width: 270px;
+}
+
+.user-navigation {
+  width: 280px;
+}
+
+.main-navigation {
+  display: flex;
+  width: 940px;
+}
+
+/* Основной раздел */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.promo {
+  margin-bottom: 53px;
+}
+
+.promo-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promo-list li {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 728px;
+  height: 266px;
+}
+
+.popular ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-item {
+  width: 220px;
+}
+
+.makers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.makers-item {
+  width: 220px;
+  border: 1px solid #eaeaea;
+}
+
+.services-description {
+  width: 400px;
+  text-transform: none;
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-menu {
+  width: 240px;
+}
+
+.service-item {
+  width: 620px;
+}
+
+.services-list p {
+  width: 280px;
+  text-transform: none;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  margin: 0;
+  padding: 0;
+  width: 550px;
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+/* Футер */
+
+.main-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-top {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top .container {
+  justify-content: space-between;
+}
+
+.footer-address {
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+  width: 380px;
+  box-sizing: border-box;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  width: 570px;
+}
+
+.footer-promo-list {
+  margin: 0;
+  padding: 0;
+  width: 550px;
+}
+
+.footer-bottom {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-copyright {
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  margin-right: 140px;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+.footer-mail {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  margin-left: auto;
+}
+
+.footer-credits {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  margin-left: auto;
 }
